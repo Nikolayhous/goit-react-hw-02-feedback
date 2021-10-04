@@ -1,14 +1,13 @@
-import Container from './components/Container/Container';
-import Section from './components/Title/Title';
+import Section from './components/Section/Section';
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions';
+import Statistics from './components/Statistics/Statistics';
 
 function App() {
     return (
-        <Container>
-            <Section title="Please leave feedback">
-                <FeedbackOptions />
-            </Section>
-        </Container>
+        <Section title="Please leave feedback">
+            <FeedbackOptions />
+            <Statistics />
+        </Section>
     );
 }
 

@@ -1,21 +1,12 @@
 import s from './Title.module.css';
 import PropTypes from 'prop-types';
 
-function Section({ title, children }) {
-    return (
-        <>
-            {title && (
-                <h1 className={s.title}>
-                    {title}
-                    {children}
-                </h1>
-            )}
-        </>
-    );
+function Title({ title }) {
+    return <>{title && <h1 className={s.title}>{title}</h1>}</>;
 }
 
-export default Section;
+export default Title;
 
-Section.propTypes = {
+Title.propTypes = {
     title: PropTypes.string.isRequired,
 };

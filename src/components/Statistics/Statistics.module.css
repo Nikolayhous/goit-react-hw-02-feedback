@@ -1,0 +1,19 @@
+.statistics {
+    margin-top: 45px;
+    padding-left: 200px;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 1.21;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 22px;
+    line-height: 1.21;
+}
+
+.text:not(:first-child) {
+    margin-top: 8px;
+}
