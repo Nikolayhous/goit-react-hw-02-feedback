@@ -6,13 +6,13 @@ class FeedbackOptions extends React.Component {
         return (
             <div className={s.feedbackBtn}>
                 <button className={s.btn} type="button">
-                    Good
+                    good
                 </button>
                 <button className={s.btn} type="button">
-                    Neutral
+                    neutral
                 </button>
                 <button className={s.btn} type="button">
-                    Bad
+                    bad
                 </button>
             </div>
         );

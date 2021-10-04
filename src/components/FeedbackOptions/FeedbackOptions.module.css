@@ -8,15 +8,23 @@
     line-height: 1.21;
     padding: 10px 50px;
     margin-top: 35px;
+    text-transform: capitalize;
     cursor: pointer;
     border: none;
+    border-radius: 5%;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
         -23px 0 20px -23px rgba(0, 0, 0, 0.8),
         23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .btn:hover {
-    background-color: aquamarine;
+    background-color: rgba(174, 243, 220, 0.445);
+}
+
+.btn:active {
+    background-color: rgba(8, 51, 172, 0.719);
+    color: #fff;
+    transition: all 0.2s;
 }
 
 .btn:not(:first-child) {

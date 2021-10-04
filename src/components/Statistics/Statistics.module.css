@@ -9,11 +9,11 @@
     margin-bottom: 15px;
 }
 
-.text {
+.item {
     font-size: 22px;
     line-height: 1.21;
 }
 
-.text:not(:first-child) {
+.item:not(:first-child) {
     margin-top: 8px;
 }
