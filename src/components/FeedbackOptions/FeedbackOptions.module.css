@@ -1,0 +1,22 @@
+.feedbackBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 16px;
+    line-height: 1.21;
+    padding: 10px 50px;
+    margin-top: 35px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.btn:hover {
+    background-color: aquamarine;
+}
+
+.btn:not(:first-child) {
+    margin-left: 25px;
+}
