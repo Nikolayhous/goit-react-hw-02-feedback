@@ -6,7 +6,13 @@ function App() {
     return (
         <Section title="Please leave feedback">
             <FeedbackOptions />
-            <Statistics />
+            <Statistics
+                good={''}
+                neutral={''}
+                bad={''}
+                total={''}
+                positivePercentage={''}
+            />
         </Section>
     );
 }
