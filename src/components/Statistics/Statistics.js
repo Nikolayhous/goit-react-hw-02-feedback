@@ -1,26 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Notification from '../Notification/Notification';
 import s from './Statistics.module.css';
 
-class Statistics extends React.Component {
-    render() {
-        return (
-            <div className={s.statistics}>
-                <h2 className={s.title}>Statistics</h2>
-                <ul>
-                    <li className={s.item}>Good:</li>
-                    <li className={s.item}>Neutral:</li>
-                    <li className={s.item}>Bad:</li>
-                    <li className={s.item}>Total:</li>
-                    <li className={s.item}>Positive feedback:</li>
-                </ul>
-                {/* <p className={s.text}>Good:</p>
-                <p className={s.text}>Neutral:</p>
-                <p className={s.text}>Bad:</p>
-                <p className={s.text}>Total:</p>
-                <p className={s.text}>Positive feedback:</p> */}
-            </div>
-        );
-    }
-}
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
+    <>
+        {total ? (
+            <ul className={s.list}>
+                <li className={s.item}>Good:{good}</li>
+                <li className={s.item}>Neutral:{neutral}</li>
+                <li className={s.item}>Bad:{bad}</li>
+                <li className={s.item}>Total:{total}</li>
+                <li className={s.item}>
+                    Positive feedback:{positivePercentage}%
+                </li>
+            </ul>
+        ) : (
+            <Notification message="No feedback given" />
+        )}
+    </>
+);
+
+Statistics.propTypes = {
+    positivePercentage: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+};
 
 export default Statistics;

@@ -3,15 +3,16 @@ import s from './Section.module.css';
 
 function Section({ title, children }) {
     return (
-        <section className={s.statistics}>
-            {title && <h1 className={s.title}>{title}</h1>}
+        <div>
+            <h2 className={s.title}>{title}</h2>
             {children}
-        </section>
+        </div>
     );
 }
 
-export default Section;
-
 Section.propTypes = {
     title: PropTypes.string.isRequired,
+    children: PropTypes.node,
 };
+
+export default Section;
