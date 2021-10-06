@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Container from './components/Container/Container';
 import Section from './components/Section/Section';
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions';
 import Statistics from './components/Statistics/Statistics';
@@ -38,7 +39,7 @@ class App extends Component {
         const { onLeaveFeedback } = this;
         const { good, neutral, bad } = this.state;
         return (
-            <section>
+            <Container>
                 <Section title={'Please leave feedback'}>
                     <FeedbackOptions
                         options={options}
@@ -54,7 +55,7 @@ class App extends Component {
                         positivePercentage={countPositiveFeedbackPercentage}
                     />
                 </Section>
-            </section>
+            </Container>
         );
     }
 }
